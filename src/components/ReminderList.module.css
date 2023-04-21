@@ -1,0 +1,64 @@
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.listItem {
+  background-color: #ffeedd;
+  height: 200px;
+  border-radius: 5px;
+  width: 20%;
+  margin: 20px 2.5%;
+  min-width: 200px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.reminderText {
+  padding: 5px 0;
+  font-size: 1.5em;
+  max-height: 100px;
+  overflow: auto;
+}
+
+.reminderDate {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.calenderIcon {
+  max-width: 20px;
+  margin-right: 10px;
+}
+
+.deleteBtn {
+  border: none;
+  border-radius: 50%;
+  background-color: #ffd8be;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: translateY;
+  transition-delay: 0.2s;
+}
+
+.deleteBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.deleteIcon {
+  max-width: 25px;
+}
