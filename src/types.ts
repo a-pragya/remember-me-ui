@@ -1,5 +1,5 @@
 export interface ListItem {
-  id: string;
-  text: string;
-  date: string;
+  ID: string;
+  reminderText: string;
+  reminderDate: string;
 }

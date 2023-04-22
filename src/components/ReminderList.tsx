@@ -6,19 +6,19 @@ function ReminderList(props: any) {
 
   const createListItem = reminderList.map((item: ListItem) => {
     return (
-      <div key={item.id} className={styles.listItem}>
-        <div className={styles.reminderText}>{item.text}</div>
+      <div key={item.ID} className={styles.listItem}>
+        <div className={styles.reminderText}>{item.reminderText}</div>
         <div className={styles.reminderDate}>
           <img
             src="/calendar.png"
             alt="calendar"
             className={styles.calenderIcon}
           />
-          {item.date}
+          {item.reminderDate}
         </div>
         <div
           className={styles.deleteBtn}
-          onClick={() => props.onDeleteReminder(item.id)}
+          onClick={() => props.onDeleteReminder(item.ID)}
         >
           <img src="/delete.png" alt="delete" className={styles.deleteIcon} />
         </div>

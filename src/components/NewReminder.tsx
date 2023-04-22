@@ -21,9 +21,9 @@ function NewReminder(props: any) {
       return;
     }
     props.onAddReminder({
-      id: generateID(),
-      text: reminderText,
-      date: reminderDate,
+      ID: generateID(),
+      reminderText: reminderText,
+      reminderDate: reminderDate,
     });
     setReminderText("");
     setReminderDate("");
