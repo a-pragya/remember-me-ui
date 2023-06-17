@@ -16,7 +16,6 @@ function App() {
   useEffect(() => {
     const getReminders = async () => {
       const remindersFromServer = await fetchReminders();
-      console.log("remindersFromServer", remindersFromServer);
       setReminders(remindersFromServer);
     };
     getReminders();
